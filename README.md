@@ -1,2 +1,2 @@
-# Devops_Capstone
-Deploy the react application to a production ready state
+
+Deploy the react application 
