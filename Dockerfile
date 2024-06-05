@@ -8,7 +8,7 @@ WORKDIR /usr/share/nginx/html
 RUN rm -rf ./*
 
 # Copy the build output to the Nginx html
-COPY build /index.html/usr/share/nginx/html
+COPY build /asset-manifest.json/usr/share/nginx/html
 
 # Expose port 80 to the outside world
 EXPOSE 80
