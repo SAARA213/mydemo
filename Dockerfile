@@ -11,7 +11,7 @@ RUN rm -rf ./*
 COPY build /manifest.json/usr/share/nginx/html
 
 # Expose port 80 to the outside world
-EXPOSE 6000
+EXPOSE 5001
 
 # Start Nginx when the container launches
 CMD ["nginx", "-g", "daemon off;"]
