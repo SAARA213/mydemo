@@ -8,10 +8,10 @@ WORKDIR /usr/share/nginx/html
 RUN rm -rf ./*
 
 # Copy the build output to the Nginx html
-COPY build /asset-manifest.json/usr/share/nginx/html
+COPY build /manifest.json/usr/share/nginx/html
 
 # Expose port 80 to the outside world
-EXPOSE 80
+EXPOSE 5000
 
 # Start Nginx when the container launches
 CMD ["nginx", "-g", "daemon off;"]
